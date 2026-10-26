@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>देसी FOLD — Premium Handcrafted Handkerchiefs @ ₹99</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rozha+One&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              paper: '#FAF6F0',
+              paperDark: '#F2E8DC',
+              brown: '#3B2314',
+              brownLight: '#5C3A21',
+              gold: '#D48C2E',
+              goldHover: '#B87722',
+              cream: '#FFFDF0',
+              muted: '#7A6A5D',
+              waGreen: '#25D366'
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            devanagari: ['Rozha One', 'serif'],
+            script: ['Great Vibes', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF6F0;
+      background-image: radial-gradient(#E5D9C8 0.75px, transparent 0.75px);
+      background-size: 16px 16px;
+      color: #3B2314;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .backdrop-blur-custom {
+      backdrop-filter: blur(8px);
+      background-color: rgba(59, 35, 20, 0.65);
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF6F0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D48C2E;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-gold selection:text-white">
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="bg-brand-brown text-brand-paper text-xs py-2 px-4 text-center font-medium tracking-wide flex justify-between items-center z-40 relative">
+    <span class="mx-auto flex items-center justify-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
+      Special Offer: Premium Handcrafted Handkerchiefs & Custom Image Printing at <strong>₹99 Only!</strong> Direct WhatsApp Ordering.
+    </span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="relative border-b border-brand-brown/10 bg-brand-cream/90 backdrop-blur-md sticky top-0 z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="group flex flex-col items-center sm:items-start">
+        <div class="flex items-baseline gap-2">
+          <span class="font-devanagari text-3xl sm:text-4xl text-brand-brown tracking-tight leading-none group-hover:text-brand-gold transition-colors">
+            देसी
+          </span>
+          <span class="font-serif text-lg sm:text-2xl tracking-[0.25em] font-bold text-brand-brown uppercase">
+            • FOLD •
+          </span>
+        </div>
+        <p class="text-[10px] tracking-[0.2em] text-brand-muted uppercase font-semibold">Custom & Plain Handkerchiefs — ₹99 Only</p>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="flex items-center gap-4 sm:gap-6 text-xs font-semibold uppercase tracking-wider">
+        <button onclick="scrollToSection('customStudio')" class="px-4 py-2 rounded-full bg-brand-gold text-white hover:bg-brand-goldHover transition-colors flex items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Custom Studio (₹99)
+        </button>
+        <button onclick="scrollToSection('catalog')" class="hover:text-brand-gold text-brand-brown transition-colors">
+          Demo Piece (₹99)
+        </button>
+        <a id="headerWaLink" href="https://wa.me/917003288747" target="_blank" class="text-emerald-700 hover:text-emerald-600 font-bold flex items-center gap-1">
+          <i class="fa-brands fa-whatsapp text-base"></i> +91 7003288747
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-12">
+
+    <!-- HERO BANNER -->
+    <div class="relative rounded-3xl overflow-hidden bg-brand-brown text-brand-cream p-6 sm:p-10 shadow-2xl border border-brand-gold/30 flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div class="max-w-2xl space-y-4 text-center lg:text-left z-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-gold/20 text-brand-gold text-xs font-semibold tracking-wider uppercase border border-brand-gold/30">
+          <i class="fa-solid fa-square-full text-[10px]"></i> Pure Handcrafted Cotton & Khadi
+        </div>
+        <h1 class="font-serif text-3xl sm:text-5xl font-bold tracking-wide leading-tight text-brand-cream">
+          Handkerchief Store — Plain or Upload Your Own Design at ₹99
+        </h1>
+        <p class="text-brand-paper/80 text-xs sm:text-sm font-light leading-relaxed">
+          Upload your own photos, logos, or custom artwork, add monograms, or order plain organic cotton handkerchiefs. Instant WhatsApp order link with design proof sent directly to <strong>+91 7003288747</strong>!
+        </p>
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+          <button onclick="scrollToSection('customStudio')" class="px-6 py-3 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-white text-xs font-bold uppercase tracking-wider shadow-lg transition-transform hover:scale-105">
+            <i class="fa-solid fa-paintbrush mr-1.5"></i> Custom Studio @ ₹99
+          </button>
+          <button onclick="scrollToSection('catalog')" class="px-6 py-3 rounded-xl border border-brand-paper/30 hover:border-brand-gold text-brand-cream text-xs font-bold uppercase tracking-wider transition-colors">
+            View Demo Piece
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 w-full lg:w-80 shrink-0 z-10">
+        <div class="bg-brand-paper/10 backdrop-blur-md p-4 rounded-2xl border border-brand-paper/20 text-center">
+          <span class="block font-serif text-3xl font-bold text-brand-gold">₹99</span>
+          <span class="text-[11px] text-brand-paper/70 font-medium">Flat Rate Handkerchief</span>
+        </div>
+        <div class="bg-brand-paper/10 backdrop-blur-md p-4 rounded-2xl border border-brand-paper/20 text-center">
+          <i class="fa-brands fa-whatsapp text-2xl text-emerald-400 mb-1"></i>
+          <span class="block text-xs font-bold text-brand-gold">Direct WhatsApp</span>
+          <span class="text-[10px] text-brand-paper/70">+91 7003288747</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 1: SINGLE DEMO PRODUCT WITH SVG ILLUSTRATION -->
+    <section id="catalog" class="space-y-6 pt-4">
+      <div class="border-b border-brand-brown/10 pb-4 flex justify-between items-end">
+        <div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-brand-brown">Featured Demo Piece</h2>
+          <p class="text-xs text-brand-muted">Our flagship pure combed organic cotton handkerchief square (42cm x 42cm).</p>
+        </div>
+        <span class="bg-brand-gold/10 text-brand-gold font-serif font-bold text-sm px-3.5 py-1 rounded-full border border-brand-gold/20">
+          ₹99 Only
+        </span>
+      </div>
+
+      <div class="max-w-md mx-auto bg-brand-cream rounded-3xl border border-brand-brown/15 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+        <div class="relative h-80 bg-[#EFE8DC] p-6 flex items-center justify-center overflow-hidden">
+          
+          <!-- High Quality SVG Handkerchief Graphic -->
+          <svg id="demoProductSvg" class="w-full h-full drop-shadow-md rounded-lg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="25" width="450" height="450" rx="6" fill="#FDFBF7" stroke="#E2D8C6" stroke-width="2"/>
+            <!-- Fold shadow details -->
+            <path d="M25 250 L475 250" stroke="#EFE4D2" stroke-width="1.5" stroke-dasharray="4 4" />
+            <path d="M250 25 L250 475" stroke="#EFE4D2" stroke-width="1.5" stroke-dasharray="4 4" />
+
+            <!-- Hem Stitch Line -->
+            <rect x="35" y="35" width="430" height="430" rx="3" stroke="#D9CEBC" stroke-width="1" stroke-dasharray="2 3"/>
+
+            <!-- Outer Striped Border (Brown & Navy accents) -->
+            <rect x="55" y="55" width="390" height="390" stroke="#5C3A21" stroke-width="2.5" fill="none"/>
+            <rect x="61" y="61" width="378" height="378" stroke="#1A2E40" stroke-width="1.2" fill="none"/>
+            <rect x="67" y="67" width="366" height="366" stroke="#5C3A21" stroke-width="2" fill="none"/>
+
+            <rect x="75" y="75" width="350" height="350" stroke="#D48C2E" stroke-width="0.75" opacity="0.6" fill="none"/>
+
+            <!-- Delicate Corner Accents -->
+            <circle cx="55" cy="55" r="2" fill="#5C3A21"/>
+            <circle cx="445" cy="55" r="2" fill="#5C3A21"/>
+            <circle cx="55" cy="445" r="2" fill="#5C3A21"/>
+            <circle cx="445" cy="445" r="2" fill="#5C3A21"/>
+          </svg>
+
+          <span class="absolute top-4 left-4 bg-brand-brown text-brand-cream text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+            Pure Organic Cotton
+          </span>
+          <span class="absolute top-4 right-4 bg-brand-gold text-white font-serif font-bold text-sm px-3.5 py-1 rounded-full shadow-md">
+            ₹99
+          </span>
+        </div>
+
+        <div class="p-6 space-y-4">
+          <div>
+            <h3 class="font-serif text-2xl font-bold text-brand-brown">Pure Cotton Striped Border Handkerchief</h3>
+            <p class="text-xs text-brand-muted mt-1 leading-relaxed">
+              100% fine combed organic cotton handkerchief square with woven accent borders. Soft, absorbent, and durable with hand-finished hem edges.
+            </p>
+          </div>
+
+          <div class="flex items-center justify-between text-xs text-brand-brown font-semibold bg-brand-paper p-3 rounded-xl border border-brand-brown/10">
+            <span>Price: <strong class="text-brand-gold font-serif text-base">₹99</strong></span>
+            <span class="text-emerald-700 font-bold"><i class="fa-solid fa-truck-fast mr-1"></i> Ready to Ship</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 pt-2">
+            <button onclick="orderPlainHandkerchief()" class="w-full bg-brand-brown hover:bg-brand-brownLight text-brand-cream font-bold py-3 px-3 rounded-xl text-xs transition-all shadow-md flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i> Buy Plain (₹99)
+            </button>
+            <button onclick="scrollToSection('customStudio')" class="w-full bg-brand-gold hover:bg-brand-goldHover text-white font-bold py-3 px-3 rounded-xl text-xs transition-all shadow-md flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-paintbrush text-sm"></i> Customise This (₹99)
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: INTERACTIVE CUSTOMIZATION STUDIO WITH IMAGE UPLOAD -->
+    <section id="customStudio" class="bg-brand-cream rounded-3xl p-6 sm:p-8 border border-brand-brown/15 shadow-xl relative overflow-hidden">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 mb-6 border-b border-brand-brown/10 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-gold flex items-center gap-1.5">
+            <i class="fa-solid fa-paintbrush"></i> Live Customizer
+          </span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-brand-brown">Custom Handkerchief Studio</h2>
+        </div>
+        <div class="bg-brand-gold/10 border border-brand-gold/30 text-brand-brown px-4 py-1.5 rounded-full text-xs font-bold">
+          All Customizations: <span class="text-brand-gold font-serif text-base">₹99</span> (Flat Rate)
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Controls Panel (Left Column) -->
+        <div class="lg:col-span-6 space-y-5 bg-brand-paper p-5 rounded-2xl border border-brand-brown/10">
+          
+          <!-- Mode Toggle: Custom vs Plain -->
+          <div>
+            <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider mb-2">1. Style Choice</label>
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="setCustomMode('custom')" id="btn-mode-custom" class="p-2.5 rounded-xl border text-xs font-bold flex items-center justify-center gap-1.5 bg-brand-brown text-white border-brand-brown transition-all">
+                <i class="fa-solid fa-wand-magic-sparkles text-brand-gold"></i> Custom Studio
+              </button>
+              <button onclick="setCustomMode('plain')" id="btn-mode-plain" class="p-2.5 rounded-xl border text-xs font-bold flex items-center justify-center gap-1.5 bg-brand-cream text-brand-brown border-brand-brown/20 hover:border-brand-gold transition-all">
+                <i class="fa-solid fa-square-check text-brand-muted"></i> Plain Handkerchief
+              </button>
+            </div>
+          </div>
+
+          <!-- Fabric Base Color -->
+          <div>
+            <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider mb-2">2. Fabric Color</label>
+            <div class="flex flex-wrap gap-2.5" id="fabricColorSwatches">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+          <!-- Border Stitching Color -->
+          <div>
+            <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider mb-2">3. Border Stripe Color</label>
+            <div class="flex flex-wrap gap-2.5" id="borderColorSwatches">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+          <!-- CUSTOM OPTIONS PANEL -->
+          <div id="customOptionsPanel" class="space-y-4 pt-2 border-t border-brand-brown/10">
+            
+            <!-- CUSTOM IMAGE UPLOAD SECTION -->
+            <div class="bg-brand-cream p-4 rounded-xl border border-brand-brown/20 space-y-3">
+              <div class="flex justify-between items-center">
+                <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider">
+                  <i class="fa-solid fa-cloud-arrow-up text-brand-gold mr-1"></i> 4. Upload Custom Image / Logo
+                </label>
+                <button id="clearImgBtn" onclick="clearUploadedImage()" class="text-[10px] text-rose-600 hover:underline font-bold hidden">
+                  Remove Image
+                </button>
+              </div>
+
+              <input type="file" id="imageUploader" accept="image/*" onchange="handleImageUpload(event)" class="hidden">
+              <label for="imageUploader" class="w-full bg-brand-paper hover:bg-brand-paperDark border-2 border-dashed border-brand-brown/30 hover:border-brand-gold rounded-xl py-3 px-4 flex flex-col items-center justify-center gap-1 cursor-pointer transition-colors text-center">
+                <i class="fa-solid fa-image text-brand-gold text-xl"></i>
+                <span class="text-xs font-bold text-brand-brown" id="uploadStatusText">Click to upload design / photo / logo</span>
+                <span class="text-[10px] text-brand-muted">Supports PNG, JPG, WEBP (Max 5MB)</span>
+              </label>
+
+              <!-- Image Adjustments Controls (Visible after image uploaded) -->
+              <div id="imageControls" class="space-y-3 pt-2 hidden border-t border-brand-brown/10">
+                <div class="grid grid-cols-3 gap-2 text-[11px]">
+                  <div>
+                    <label class="block font-bold text-brand-brown mb-1">Scale / Size</label>
+                    <input type="range" id="imgScale" min="0.2" max="2.5" step="0.1" value="1" oninput="updateStudioCanvas()" class="w-full accent-brand-gold">
+                  </div>
+                  <div>
+                    <label class="block font-bold text-brand-brown mb-1">Rotation (Deg)</label>
+                    <input type="range" id="imgRotate" min="0" max="360" step="5" value="0" oninput="updateStudioCanvas()" class="w-full accent-brand-gold">
+                  </div>
+                  <div>
+                    <label class="block font-bold text-brand-brown mb-1">Opacity</label>
+                    <input type="range" id="imgOpacity" min="0.1" max="1" step="0.1" value="1" oninput="updateStudioCanvas()" class="w-full accent-brand-gold">
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3 text-[11px]">
+                  <div>
+                    <label class="block font-bold text-brand-brown mb-1">Move Horizontal (X)</label>
+                    <input type="range" id="imgPosX" min="50" max="350" value="200" oninput="updateStudioCanvas()" class="w-full accent-brand-gold">
+                  </div>
+                  <div>
+                    <label class="block font-bold text-brand-brown mb-1">Move Vertical (Y)</label>
+                    <input type="range" id="imgPosY" min="50" max="350" value="200" oninput="updateStudioCanvas()" class="w-full accent-brand-gold">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MONOGRAM TEXT INPUT -->
+            <div>
+              <div class="flex justify-between items-center mb-1">
+                <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider">5. Custom Text / Monogram</label>
+                <span class="text-[10px] text-brand-muted">Max 8 letters</span>
+              </div>
+              <input type="text" id="studioText" oninput="updateStudioCanvas()" maxlength="8" placeholder="e.g. A.K. or DEVI" value="D.F." class="w-full bg-brand-cream border border-brand-brown/20 rounded-xl py-2 px-3 text-xs font-medium focus:outline-none focus:border-brand-gold text-brand-brown">
+            </div>
+
+            <!-- FONT & THREAD COLOR -->
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider mb-1">Font Style</label>
+                <select id="studioFont" onchange="updateStudioCanvas()" class="w-full bg-brand-cream border border-brand-brown/20 rounded-xl py-2 px-2 text-xs focus:outline-none focus:border-brand-gold font-medium text-brand-brown">
+                  <option value="Cormorant Garamond">Classic Serif</option>
+                  <option value="Rozha One">Devanagari Style</option>
+                  <option value="Great Vibes">Calligraphy / Script</option>
+                  <option value="Plus Jakarta Sans">Modern Sans</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider mb-1">Thread Color</label>
+                <select id="studioThreadColor" onchange="updateStudioCanvas()" class="w-full bg-brand-cream border border-brand-brown/20 rounded-xl py-2 px-2 text-xs focus:outline-none focus:border-brand-gold font-medium text-brand-brown">
+                  <option value="#D48C2E">Royal Gold</option>
+                  <option value="#8B0000">Deep Maroon</option>
+                  <option value="#0047AB">Royal Navy</option>
+                  <option value="#000000">Midnight Black</option>
+                  <option value="#3B2314">Earthy Brown</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- MOTIF STAMPS & PLACEMENT -->
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider mb-1">Motif Stamp</label>
+                <select id="studioMotif" onchange="updateStudioCanvas()" class="w-full bg-brand-cream border border-brand-brown/20 rounded-xl py-2 px-2 text-xs focus:outline-none focus:border-brand-gold font-medium text-brand-brown">
+                  <option value="lotus">Lotus Floral</option>
+                  <option value="mandala">Mandala Stamp</option>
+                  <option value="paisley">Paisley / Kalka</option>
+                  <option value="peacock">Peacock Emblem</option>
+                  <option value="none">None (Custom Image / Text Only)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-brand-brown uppercase tracking-wider mb-1">Text Placement</label>
+                <select id="studioPlacement" onchange="updateStudioCanvas()" class="w-full bg-brand-cream border border-brand-brown/20 rounded-xl py-2 px-2 text-xs focus:outline-none focus:border-brand-gold font-medium text-brand-brown">
+                  <option value="corner">Bottom Right Corner</option>
+                  <option value="center">Center Emblem</option>
+                  <option value="edge">Top Right Edge</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Price & Order Action -->
+          <div class="pt-3 border-t border-brand-brown/10 flex items-center justify-between gap-3">
+            <div>
+              <span class="text-[10px] text-brand-muted uppercase font-semibold block">Fixed Price</span>
+              <span class="font-serif text-2xl font-bold text-brand-brown">₹99</span>
+            </div>
+            <button onclick="orderStudioHandkerchief()" class="bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold py-3 px-5 rounded-xl shadow-lg transition-transform hover:scale-105 active:scale-95 flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i> Buy via WhatsApp @ ₹99
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Real-Time Canvas Visualizer (Right Column) -->
+        <div class="lg:col-span-6 flex flex-col items-center justify-center bg-brand-paper/60 p-6 rounded-2xl border border-brand-brown/10 relative min-h-[440px]">
+          <span class="absolute top-4 left-4 bg-brand-brown text-brand-cream text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
+            <i class="fa-solid fa-eye mr-1 text-brand-gold"></i> Real-Time Canvas Preview
+          </span>
+          
+          <div class="w-full max-w-sm aspect-square bg-white rounded-2xl shadow-inner border border-brand-brown/10 p-3 flex items-center justify-center my-4 overflow-hidden relative">
+            <canvas id="studioCanvas" width="400" height="400" class="w-full h-full object-contain rounded-xl shadow-sm"></canvas>
+          </div>
+
+          <p class="text-[11px] text-brand-muted text-center max-w-xs">
+            <i class="fa-solid fa-circle-info text-brand-gold mr-1"></i> Design proof is automatically rendered and ready to send directly on WhatsApp!
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-brown text-brand-paper/80 border-t border-brand-brownLight mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
+        <div>
+          <div class="flex items-baseline justify-center md:justify-start gap-2 mb-2">
+            <span class="font-devanagari text-3xl text-brand-gold">देसी</span>
+            <span class="font-serif text-xl tracking-widest text-brand-paper uppercase">• FOLD •</span>
+          </div>
+          <p class="text-xs text-brand-paper/60 leading-relaxed max-w-sm">
+            Handcrafted organic cotton handkerchiefs. Custom monograms, user-uploaded image printing, and heritage motifs — All at flat ₹99.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-serif text-brand-gold text-base font-semibold mb-3">Brand Promises</h4>
+          <ul class="text-xs space-y-2 text-brand-paper/70">
+            <li><i class="fa-solid fa-check text-brand-gold mr-2"></i>100% Pure Organic Cotton</li>
+            <li><i class="fa-solid fa-check text-brand-gold mr-2"></i>Upload Your Custom Design / Image</li>
+            <li><i class="fa-solid fa-check text-brand-gold mr-2"></i>Fixed Storewide Price @ ₹99</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-brand-gold text-base font-semibold mb-3">WhatsApp Order Support</h4>
+          <p class="text-xs text-brand-paper/70 mb-3">Direct order desk on WhatsApp (+91 7003288747).</p>
+          <a id="footerWaBtn" href="https://wa.me/917003288747" target="_blank" class="inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition-colors shadow-md">
+            <i class="fa-brands fa-whatsapp text-lg"></i> Chat on +91 7003288747
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-brand-paper/10 pt-6 text-center text-xs text-brand-paper/50 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <p>© <span id="yearSpan"></span> देसी FOLD. All Rights Reserved.</p>
+        <p>Premium Custom Handkerchiefs • ₹99 Only</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a id="floatingWaBtn" href="https://wa.me/917003288747" target="_blank" title="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white p-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center group">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap text-xs font-semibold pl-0 group-hover:pl-2 pr-0 group-hover:pr-1">
+      Order @ ₹99
+    </span>
+  </a>
+
+  <!-- WHATSAPP PROOF & ORDER MODAL -->
+  <div id="whatsappProofModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 backdrop-blur-custom">
+    <div class="bg-brand-cream rounded-3xl max-w-md w-full p-6 border border-brand-brown/10 shadow-2xl relative text-center space-y-4">
+      <button onclick="closeWhatsAppProofModal()" class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-brand-paper text-brand-brown hover:bg-brand-brown hover:text-white transition-colors flex items-center justify-center text-xs">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-2xl">
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+
+      <h3 class="font-serif text-xl font-bold text-brand-brown">Handkerchief Design Proof Ready!</h3>
+
+      <!-- Rendered Image Proof Box -->
+      <div class="p-2 bg-brand-paper rounded-2xl border border-brand-brown/10 flex items-center justify-center max-h-56 overflow-hidden relative group">
+        <img id="proofModalImg" src="" class="max-h-52 object-contain rounded-xl shadow-sm">
+      </div>
+
+      <!-- Item Specification Summary -->
+      <div class="text-left bg-brand-paper/80 p-3 rounded-xl border border-brand-brown/10 text-xs space-y-1">
+        <div class="flex justify-between font-bold text-brand-brown">
+          <span id="proofItemTitle">Handkerchief</span>
+          <span class="text-brand-gold font-serif text-sm">₹99</span>
+        </div>
+        <p id="proofItemDetails" class="text-brand-muted text-[11px]">Specs summary...</p>
+      </div>
+
+      <!-- Copy Feedback Banner -->
+      <div id="copyFeedbackBanner" class="bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs rounded-xl p-3 text-left space-y-1">
+        <p class="font-bold flex items-center gap-1.5 text-emerald-800" id="copyBannerTitle">
+          <i class="fa-solid fa-circle-check text-emerald-600"></i> Proof Image Ready!
+        </p>
+        <p class="text-[11px] text-emerald-700 leading-normal" id="copyBannerDesc">
+          Click <strong>"Copy Image"</strong> below or download the image proof to attach on WhatsApp!
+        </p>
+      </div>
+
+      <!-- Action Buttons Grid -->
+      <div class="flex flex-col gap-2 pt-1">
+        <button id="finalOpenWaBtn" onclick="executeWhatsAppRedirect()" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-bold py-3 px-4 rounded-xl text-xs transition-all shadow-md flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Open WhatsApp Chat (+91 7003288747)
+        </button>
+
+        <div class="grid grid-cols-2 gap-2">
+          <button onclick="copyCanvasImageToClipboard()" class="w-full border border-brand-gold/40 bg-brand-gold/10 hover:bg-brand-gold hover:text-white text-brand-brown font-bold py-2.5 px-3 rounded-xl text-xs transition-colors flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-copy text-brand-gold group-hover:text-white"></i> Copy Image
+          </button>
+          <button onclick="downloadDesignProofImage()" class="w-full border border-brand-brown/20 bg-brand-paper hover:bg-brand-paperDark text-brand-brown font-bold py-2.5 px-3 rounded-xl text-xs transition-colors flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-download text-brand-gold"></i> Download Proof
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // TARGET WHATSAPP PHONE NUMBER
+    const whatsappPhoneNumber = "917003288747";
+    const FIXED_PRICE = 99;
+
+    // SWATCHES CONFIG FOR STUDIO
+    const fabricColors = [
+      { name: "Pure White", hex: "#FDFBF7", textDark: true },
+      { name: "Vintage Cream", hex: "#FAF6F0", textDark: true },
+      { name: "Midnight Black", hex: "#1A1A1A", textDark: false },
+      { name: "Royal Navy", hex: "#0F2C59", textDark: false },
+      { name: "Deep Maroon", hex: "#5B0888", textDark: false },
+      { name: "Sage Olive", hex: "#3A4D39", textDark: false },
+      { name: "Dusty Rose", hex: "#D28888", textDark: false }
+    ];
+
+    const borderColors = [
+      { name: "Brown & Navy Lines", hex: "#5C3A21", secondaryHex: "#1A2E40" },
+      { name: "Royal Gold Stripes", hex: "#D48C2E", secondaryHex: "#B87722" },
+      { name: "Deep Maroon Lines", hex: "#8B0000", secondaryHex: "#5B0888" },
+      { name: "Midnight Black Lines", hex: "#000000", secondaryHex: "#333333" }
+    ];
+
+    // STATE
+    let activeCustomMode = "custom"; // 'custom' or 'plain'
+    let selectedFabricColor = fabricColors[0];
+    let selectedBorderColor = borderColors[0];
+    let userUploadedImageObj = null;
+    let pendingWaUrl = "";
+    let formattedOrderSpecsText = "";
+
+    // INITIALIZATION
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('yearSpan').textContent = new Date().getFullYear();
+      updateWhatsappTargetLinks();
+      renderFabricSwatches();
+      renderBorderSwatches();
+      updateStudioCanvas();
+    });
+
+    function updateWhatsappTargetLinks() {
+      const defaultUrl = `https://wa.me/${whatsappPhoneNumber}?text=${encodeURIComponent("Namaste देसी FOLD! I want to order handkerchiefs @ ₹99.")}`;
+      document.getElementById('headerWaLink').href = defaultUrl;
+      document.getElementById('footerWaBtn').href = defaultUrl;
+      document.getElementById('floatingWaBtn').href = defaultUrl;
+    }
+
+    function scrollToSection(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // FABRIC & BORDER SWATCH RENDERERS
+    function renderFabricSwatches() {
+      const container = document.getElementById('fabricColorSwatches');
+      container.innerHTML = fabricColors.map((col, idx) => `
+        <button onclick="selectFabricColor(${idx})" title="${col.name}" class="w-8 h-8 rounded-full border-2 transition-transform hover:scale-110 shadow-sm flex items-center justify-center ${
+          selectedFabricColor.hex === col.hex ? 'border-brand-gold scale-110 ring-2 ring-brand-gold/30' : 'border-brand-brown/20'
+        }" style="background-color: ${col.hex}">
+          ${selectedFabricColor.hex === col.hex ? `<i class="fa-solid fa-check text-xs ${col.textDark ? 'text-brand-brown' : 'text-white'}"></i>` : ''}
+        </button>
+      `).join('');
+    }
+
+    function selectFabricColor(idx) {
+      selectedFabricColor = fabricColors[idx];
+      renderFabricSwatches();
+      updateStudioCanvas();
+    }
+
+    function renderBorderSwatches() {
+      const container = document.getElementById('borderColorSwatches');
+      container.innerHTML = borderColors.map((col, idx) => `
+        <button onclick="selectBorderColor(${idx})" title="${col.name}" class="w-8 h-8 rounded-full border-2 transition-transform hover:scale-110 shadow-sm flex items-center justify-center ${
+          selectedBorderColor.hex === col.hex ? 'border-brand-brown scale-110 ring-2 ring-brand-gold/30' : 'border-brand-brown/20'
+        }" style="background-color: ${col.hex}">
+          ${selectedBorderColor.hex === col.hex ? `<i class="fa-solid fa-check text-xs text-brand-gold"></i>` : ''}
+        </button>
+      `).join('');
+    }
+
+    function selectBorderColor(idx) {
+      selectedBorderColor = borderColors[idx];
+      renderBorderSwatches();
+      updateStudioCanvas();
+    }
+
+    function setCustomMode(mode) {
+      activeCustomMode = mode;
+      const btnCustom = document.getElementById('btn-mode-custom');
+      const btnPlain = document.getElementById('btn-mode-plain');
+      const customPanel = document.getElementById('customOptionsPanel');
+
+      if (mode === 'custom') {
+        btnCustom.className = "p-2.5 rounded-xl border text-xs font-bold flex items-center justify-center gap-1.5 bg-brand-brown text-white border-brand-brown transition-all";
+        btnPlain.className = "p-2.5 rounded-xl border text-xs font-bold flex items-center justify-center gap-1.5 bg-brand-cream text-brand-brown border-brand-brown/20 hover:border-brand-gold transition-all";
+        customPanel.classList.remove('hidden');
+      } else {
+        btnPlain.className = "p-2.5 rounded-xl border text-xs font-bold flex items-center justify-center gap-1.5 bg-brand-brown text-white border-brand-brown transition-all";
+        btnCustom.className = "p-2.5 rounded-xl border text-xs font-bold flex items-center justify-center gap-1.5 bg-brand-cream text-brand-brown border-brand-brown/20 hover:border-brand-gold transition-all";
+        customPanel.classList.add('hidden');
+      }
+
+      updateStudioCanvas();
+    }
+
+    // CUSTOM USER IMAGE UPLOAD HANDLING
+    function handleImageUpload(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      if (file.size > 5 * 1024 * 1024) {
+        alert("Please upload an image smaller than 5MB.");
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const img = new Image();
+        img.onload = function() {
+          userUploadedImageObj = img;
+          document.getElementById('uploadStatusText').textContent = `Uploaded: ${file.name.substring(0, 15)}...`;
+          document.getElementById('clearImgBtn').classList.remove('hidden');
+          document.getElementById('imageControls').classList.remove('hidden');
+          updateStudioCanvas();
+        };
+        img.src = event.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function clearUploadedImage() {
+      userUploadedImageObj = null;
+      document.getElementById('imageUploader').value = "";
+      document.getElementById('uploadStatusText').textContent = "Click to upload design / photo / logo";
+      document.getElementById('clearImgBtn').classList.add('hidden');
+      document.getElementById('imageControls').classList.add('hidden');
+      updateStudioCanvas();
+    }
+
+    // REAL-TIME CANVAS DRAWING ENGINE WITH GENERATED ARTWORK
+    function updateStudioCanvas() {
+      const canvas = document.getElementById('studioCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const w = canvas.width;
+      const h = canvas.height;
+
+      // Clear Canvas Background
+      ctx.clearRect(0, 0, w, h);
+
+      // Card Canvas Background
+      ctx.fillStyle = "#EFE8DC";
+      ctx.fillRect(0, 0, w, h);
+
+      // 1. Draw Organic Cotton Fabric Base
+      const pad = 25;
+      const hkW = w - pad * 2;
+      const hkH = h - pad * 2;
+
+      ctx.save();
+      ctx.fillStyle = selectedFabricColor.hex;
+      ctx.shadowColor = "rgba(0,0,0,0.15)";
+      ctx.shadowBlur = 12;
+      ctx.shadowOffsetY = 4;
+      ctx.fillRect(pad, pad, hkW, hkH);
+      ctx.restore();
+
+      // Fold lines / Fabric texture accents
+      ctx.strokeStyle = "rgba(0,0,0,0.04)";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(pad, h / 2); ctx.lineTo(w - pad, h / 2);
+      ctx.moveTo(w / 2, pad); ctx.lineTo(w / 2, h - pad);
+      ctx.stroke();
+
+      // Hem Stitch Line
+      ctx.strokeStyle = "rgba(0,0,0,0.15)";
+      ctx.lineWidth = 1;
+      ctx.setLineDash([3, 3]);
+      ctx.strokeRect(pad + 8, pad + 8, hkW - 16, hkH - 16);
+      ctx.setLineDash([]);
+
+      // 2. Draw Woven Stripe Borders
+      const bColor1 = selectedBorderColor.hex;
+      const bColor2 = selectedBorderColor.secondaryHex || "#1A2E40";
+
+      ctx.lineWidth = 2.5;
+      ctx.strokeStyle = bColor1;
+      ctx.strokeRect(pad + 25, pad + 25, hkW - 50, hkH - 50);
+
+      ctx.lineWidth = 1.2;
+      ctx.strokeStyle = bColor2;
+      ctx.strokeRect(pad + 30, pad + 30, hkW - 60, hkH - 60);
+
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = bColor1;
+      ctx.strokeRect(pad + 35, pad + 35, hkW - 70, hkH - 70);
+
+      // Custom Elements (Image, Text, Motifs)
+      if (activeCustomMode === 'custom') {
+        
+        // Draw User Uploaded Image if available
+        if (userUploadedImageObj) {
+          ctx.save();
+          const scale = parseFloat(document.getElementById('imgScale')?.value || 1);
+          const rotateDeg = parseFloat(document.getElementById('imgRotate')?.value || 0);
+          const opacity = parseFloat(document.getElementById('imgOpacity')?.value || 1);
+          const posX = parseFloat(document.getElementById('imgPosX')?.value || 200);
+          const posY = parseFloat(document.getElementById('imgPosY')?.value || 200);
+
+          ctx.globalAlpha = opacity;
+          ctx.translate(posX, posY);
+          ctx.rotate((rotateDeg * Math.PI) / 180);
+
+          const imgAspect = userUploadedImageObj.width / userUploadedImageObj.height;
+          let drawW = 120 * scale;
+          let drawH = (120 / imgAspect) * scale;
+
+          ctx.drawImage(
+            userUploadedImageObj,
+            -drawW / 2,
+            -drawH / 2,
+            drawW,
+            drawH
+          );
+          ctx.restore();
+        }
+
+        // Draw Text & Motifs
+        const textVal = document.getElementById('studioText')?.value.trim() || "";
+        const fontVal = document.getElementById('studioFont')?.value || "Cormorant Garamond";
+        const threadColor = document.getElementById('studioThreadColor')?.value || "#D48C2E";
+        const motifVal = document.getElementById('studioMotif')?.value || "lotus";
+        const placement = document.getElementById('studioPlacement')?.value || "corner";
+
+        let targetX = w / 2;
+        let targetY = h / 2;
+
+        if (placement === "corner") {
+          targetX = 275;
+          targetY = 275;
+        } else if (placement === "edge") {
+          targetX = 275;
+          targetY = 125;
+        }
+
+        ctx.fillStyle = threadColor;
+        ctx.strokeStyle = threadColor;
+
+        // Draw Heritage Motif
+        if (motifVal !== "none") {
+          ctx.save();
+          ctx.translate(targetX, targetY - (textVal ? 20 : 0));
+          ctx.lineWidth = 2;
+
+          if (motifVal === "lotus") {
+            ctx.beginPath();
+            ctx.ellipse(0, 0, 12, 18, 0, 0, Math.PI * 2);
+            ctx.ellipse(-9, 4, 9, 15, -Math.PI / 6, 0, Math.PI * 2);
+            ctx.ellipse(9, 4, 9, 15, Math.PI / 6, 0, Math.PI * 2);
+            ctx.stroke();
+          } else if (motifVal === "mandala") {
+            ctx.beginPath();
+            ctx.arc(0, 0, 18, 0, Math.PI * 2);
+            ctx.stroke();
+            for (let i = 0; i < 8; i++) {
+              const ang = (i * Math.PI) / 4;
+              ctx.beginPath();
+              ctx.arc(Math.cos(ang) * 12, Math.sin(ang) * 12, 3.5, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          } else if (motifVal === "paisley") {
+            ctx.beginPath();
+            ctx.arc(0, 4, 13, 0, Math.PI * 2);
+            ctx.lineTo(8, -16);
+            ctx.stroke();
+          } else if (motifVal === "peacock") {
+            ctx.beginPath();
+            ctx.arc(0, -5, 8, 0, Math.PI * 2);
+            ctx.moveTo(0, 3);
+            ctx.lineTo(-12, 18);
+            ctx.lineTo(12, 18);
+            ctx.closePath();
+            ctx.stroke();
+          }
+          ctx.restore();
+        }
+
+        // Draw Custom Monogram Text
+        if (textVal) {
+          ctx.font = `bold 22px "${fontVal}", serif`;
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          const textY = motifVal !== "none" ? targetY + 18 : targetY;
+          ctx.fillText(textVal, targetX, textY);
+        }
+      }
+
+      // Branding Watermark
+      ctx.font = '600 11px "Plus Jakarta Sans", sans-serif';
+      ctx.fillStyle = "#3B2314";
+      ctx.textAlign = "left";
+      ctx.fillText("देसी FOLD • Handkerchief @ ₹99", 20, h - 10);
+      ctx.textAlign = "right";
+      ctx.fillText("Pure Cotton", w - 20, h - 10);
+    }
+
+    // ORDER PLAIN DEMO PRODUCT (@ ₹99)
+    function orderPlainHandkerchief() {
+      let waText = `*NEW HANDKERCHIEF ORDER — देसी FOLD*\n`;
+      waText += `------------------------------------\n`;
+      waText += `*Item:* Pure Cotton Striped Border Handkerchief\n`;
+      waText += `*Type:* Plain Organic Cotton\n`;
+      waText += `*Price:* ₹${FIXED_PRICE}\n`;
+      waText += `------------------------------------\n`;
+      waText += `Please confirm order & shipping details!`;
+
+      formattedOrderSpecsText = waText;
+      pendingWaUrl = `https://wa.me/${whatsappPhoneNumber}?text=${encodeURIComponent(waText)}`;
+
+      // Render Plain SVG data URL for proof modal
+      const canvas = document.getElementById('studioCanvas');
+      openWhatsAppProofModal(
+        canvas ? canvas.toDataURL("image/png") : "",
+        "Pure Cotton Striped Border Handkerchief (Plain)",
+        `Pure Combed Organic Cotton | Price: ₹${FIXED_PRICE}`
+      );
+    }
+
+    // STUDIO ORDER FLOW (@ ₹99)
+    function orderStudioHandkerchief() {
+      const canvas = document.getElementById('studioCanvas');
+      if (!canvas) return;
+
+      const dataUrl = canvas.toDataURL("image/png");
+
+      const isCustom = activeCustomMode === 'custom';
+      const textVal = document.getElementById('studioText')?.value.trim() || "N/A";
+      const threadColor = document.getElementById('studioThreadColor')?.value || "#D48C2E";
+      const hasCustomImage = userUploadedImageObj !== null;
+
+      let detailsText = `Striped Organic Cotton Base`;
+      if (isCustom) {
+        if (hasCustomImage) detailsText += ` | Custom Image Uploaded`;
+        if (textVal !== "N/A") detailsText += ` | Monogram: "${textVal}"`;
+      } else {
+        detailsText += ` | Plain Handkerchief`;
+      }
+
+      let waText = `*NEW HANDKERCHIEF ORDER — देसी FOLD*\n`;
+      waText += `------------------------------------\n`;
+      waText += `*Item:* Handkerchief (${isCustom ? 'Custom Studio' : 'Plain'})\n`;
+      waText += `*Base Fabric:* Organic Cotton with Woven Borders\n`;
+
+      if (isCustom) {
+        if (hasCustomImage) waText += `*Custom Image:* Included in design proof\n`;
+        if (textVal !== "N/A") waText += `*Monogram Text:* ${textVal}\n`;
+        waText += `*Thread Color:* ${threadColor}\n`;
+      } else {
+        waText += `*Customization:* Plain Handkerchief\n`;
+      }
+      waText += `*Price:* ₹${FIXED_PRICE}\n`;
+      waText += `------------------------------------`;
+
+      formattedOrderSpecsText = waText;
+      pendingWaUrl = `https://wa.me/${whatsappPhoneNumber}?text=${encodeURIComponent(waText)}`;
+
+      openWhatsAppProofModal(
+        dataUrl,
+        `Handkerchief (${isCustom ? 'Custom Studio' : 'Plain'})`,
+        detailsText
+      );
+
+      // Attempt immediate copy to clipboard
+      copyCanvasImageToClipboard(false);
+    }
+
+    // PROOF MODAL OPEN / CLOSE
+    function openWhatsAppProofModal(imgUrl, title, details) {
+      document.getElementById('proofModalImg').src = imgUrl;
+      document.getElementById('proofItemTitle').textContent = title;
+      document.getElementById('proofItemDetails').textContent = details;
+      document.getElementById('whatsappProofModal').classList.remove('hidden');
+    }
+
+    function closeWhatsAppProofModal() {
+      document.getElementById('whatsappProofModal').classList.add('hidden');
+    }
+
+    // ROBUST CLIPBOARD COPY FUNCTION WITH COMPATIBILITY FALLBACKS
+    async function copyCanvasImageToClipboard(showFeedback = true) {
+      const canvas = document.getElementById('studioCanvas');
+      
+      try {
+        if (canvas && navigator.clipboard && window.ClipboardItem) {
+          canvas.toBlob(async (blob) => {
+            if (!blob) {
+              fallbackCopyText();
+              return;
+            }
+            try {
+              const item = new ClipboardItem({ 'image/png': blob });
+              await navigator.clipboard.write([item]);
+              updateCopyBanner(true, "Image Proof Copied!", "Press Paste (Ctrl+V) in WhatsApp chat to share your design!");
+              if (showFeedback) showToastNotification("Image copied to clipboard!");
+            } catch (err) {
+              console.warn("ClipboardItem write failed:", err);
+              fallbackCopyText();
+            }
+          }, 'image/png');
+        } else {
+          fallbackCopyText();
+        }
+      } catch (err) {
+        console.warn("Clipboard copy failed:", err);
+        fallbackCopyText();
+      }
+    }
+
+    function fallbackCopyText() {
+      if (navigator.clipboard && formattedOrderSpecsText) {
+        navigator.clipboard.writeText(formattedOrderSpecsText).then(() => {
+          updateCopyBanner(true, "Order Specs Copied!", "Order text copied to clipboard! Paste it into WhatsApp chat.");
+          showToastNotification("Order text copied to clipboard!");
+        }).catch(() => {
+          updateCopyBanner(false, "Ready to Send", "Click 'Download Proof' to save your design image and attach in WhatsApp.");
+        });
+      } else {
+        updateCopyBanner(false, "Ready to Send", "Click 'Download Proof' to save your design image and attach in WhatsApp.");
+      }
+    }
+
+    function updateCopyBanner(success, title, desc) {
+      const titleEl = document.getElementById('copyBannerTitle');
+      const descEl = document.getElementById('copyBannerDesc');
+      if (titleEl && descEl) {
+        titleEl.innerHTML = success 
+          ? `<i class="fa-solid fa-circle-check text-emerald-600"></i> ${title}`
+          : `<i class="fa-solid fa-circle-info text-brand-gold"></i> ${title}`;
+        descEl.textContent = desc;
+      }
+    }
+
+    // DOWNLOAD IMAGE PROOF FILE
+    function downloadDesignProofImage() {
+      const canvas = document.getElementById('studioCanvas');
+      if (!canvas) return;
+
+      const link = document.createElement('a');
+      link.download = `desifolds-handkerchief-proof-₹99.png`;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+      showToastNotification("Proof image downloaded!");
+    }
+
+    function executeWhatsAppRedirect() {
+      if (pendingWaUrl) {
+        window.open(pendingWaUrl, '_blank');
+      }
+      closeWhatsAppProofModal();
+    }
+
+    function showToastNotification(msg) {
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-10 left-1/2 -translate-x-1/2 bg-brand-brown text-brand-paper text-xs font-bold px-4 py-2.5 rounded-xl shadow-2xl z-50 animate-bounce border border-brand-gold';
+      toast.innerHTML = `<i class="fa-solid fa-check text-brand-gold mr-1.5"></i> ${msg}`;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 3000);
+    }
+  </script>
+</body>
+</html>
